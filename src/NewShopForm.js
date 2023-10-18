@@ -20,20 +20,6 @@ function NewShopForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
-    if (!shopData.name) {
-      alert('Name is required');
-      return;
-    }
-    if (!shopData.description) {
-      alert('Description is required');
-      return;
-    }
-    if (!shopData.logo) {
-      alert('Logo is required');
-      return;
-    }
-  
     console.log('Form submitted:', shopData);
     setShopData({
       name: '',
@@ -41,7 +27,6 @@ function NewShopForm() {
       logo: null,
     });
   };
-  
   
 
   const handleCancel = () => {
