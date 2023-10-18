@@ -21,33 +21,8 @@ function NewProductForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
-    if (!productData.name) {
-      alert('Name is required');
-      return;
-    }
-    if (!productData.description) {
-      alert('Description is required');
-      return;
-    }
-    if (!productData.category) {
-      alert('Category is required');
-      return;
-    }
-    if (!productData.quantity) {
-      alert('Quantity is required');
-      return;
-    }
-    if (!productData.price) {
-      alert('Price is required');
-      return;
-    }
-    if (!productData.photo) {
-      alert('Photo is required');
-      return;
-    }
-  
     console.log('Form submitted:', productData);
+    // Clear the form data
     setProductData({
       name: '',
       description: '',
@@ -57,7 +32,6 @@ function NewProductForm() {
       photo: null,
     });
   };
-  
   
 
   const handleCancel = () => {
